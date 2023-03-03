@@ -15,5 +15,6 @@ else
 fi
 
 cp student-submission/ListExamples.java ./
+
 javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples

@@ -14,7 +14,14 @@ else
    exit
 fi
 
-cp student-submission/ListExamples.java ./
+cd ../
+cp TestListExamples.java student-submission
+cd lib
+cp junit-4.13.2.jar student-submission
+cp hamcrest-core-1.3.jar student-submission
+echo 'transferred'
+
+cd ../student-submission
 
 javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples

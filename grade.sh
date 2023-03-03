@@ -11,7 +11,7 @@ cd student-submission
 #Checks to see if the file exists
 if [[ -e ListExamples.java ]]
 then
-   echo 'File Found'
+   echo 'FILE FOUND'
 else
    echo 'FILE NOT FOUND'
    exit
@@ -23,7 +23,7 @@ cp TestListExamples.java student-submission
 cd lib
 cp junit-4.13.2.jar student-submission
 cp hamcrest-core-1.3.jar student-submission
-echo 'transferred'
+echo 'READY TO TEST'
 
 cd ../student-submission
 
